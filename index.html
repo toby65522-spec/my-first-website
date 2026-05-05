@@ -1,67 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>My First Website</title>
+    <title>Toby Web Studio | Starter Websites</title>
     <link rel="stylesheet" href="styles.css">
-
   </head>
-  <body><nav>
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <body>
+    <video class="site-background-video" autoplay muted loop playsinline>
+      <source src="hero-background.mp4" type="video/mp4">
+    </video>
+    <div class="site-background-overlay"></div>
 
+    <nav class="site-nav">
+      <a class="logo" href="#">Toby Web Studio</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
 
-  <header>
-  <h1>Welcome to my website!</h1>
-  <p>I am learning web design and development.</p>
-</header>
+    <header class="hero">
+      <div class="hero-scene hero-mountain"></div>
+      <div class="hero-scene hero-ship"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Personal Portfolio + Web Brand</p>
+        <h1>Toby Web Studio</h1>
+        <p class="hero-text">
+          I create clean starter websites for small businesses, creators, and
+          personal brands that need a simple online presence.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary-button" href="#projects">View My Work</a>
+          <a class="button secondary-button" href="#contact">Start a Conversation</a>
+        </div>
+      </div>
+    </header>
 
-<section id="about">
+    <main>
+      <section id="about" class="section">
+        <div class="section-content about-layout">
+          <div>
+            <p class="section-label">About The Brand</p>
+            <h2>Simple websites with a clear message and a professional first impression.</h2>
+            <p>
+              Toby Web Studio is my growing portfolio brand. I am learning web
+              development by building real, useful websites that help people show
+              who they are, what they do, and how to contact them.
+            </p>
+            <p>
+              My focus is clean layout, readable content, mobile-friendly design,
+              and publishing websites online with GitHub Pages.
+            </p>
+          </div>
 
-  <h2>About Me</h2>
-  <p>Hello, my name is Toby. I am learning web development because I want to build useful and creative websites.</p>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Laptop showing web development code on a desk">
+        </div>
+      </section>
 
-  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Laptop with code on a desk">
+      <section id="services" class="section muted-section">
+        <div class="section-content">
+          <p class="section-label">What I Build</p>
+          <h2>Starter websites for people who need to look credible online.</h2>
 
-</section>
+          <div class="service-grid">
+            <article class="service-card">
+              <h3>Personal Portfolio</h3>
+              <p>A clean website for students, freelancers, and beginners who want to show their work.</p>
+            </article>
 
+            <article class="service-card">
+              <h3>Business Landing Page</h3>
+              <p>A one-page website for a small business, service, or product with a clear call to action.</p>
+            </article>
 
+            <article class="service-card">
+              <h3>Online Profile Refresh</h3>
+              <p>Simple layout, copy, and style improvements that make an existing page feel more professional.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section class="section offer-section">
+        <div class="section-content offer-layout">
+          <div>
+            <p class="section-label">Featured Offer</p>
+            <h2>Starter Site Launch Kit</h2>
+            <p>
+              A simple one-page website package for someone who wants to introduce
+              themselves, explain what they offer, and give visitors a clear way to
+              make contact.
+            </p>
+          </div>
 
-  <section id="contact">
-    <h2>Contact<section id="projects">
-  <h2>My Projects</h2>
+          <ul class="offer-list">
+            <li>Homepage with a clear headline</li>
+            <li>About, services, work, and contact sections</li>
+            <li>Mobile-friendly styling</li>
+            <li>Published online with GitHub Pages</li>
+          </ul>
+        </div>
+      </section>
 
-  <div class="project-card">
-    <h3>Project One</h3>
-    <p>My first simple website built with HTML, CSS, and JavaScript.</p>
-  </div>
+      <section id="projects" class="section">
+        <div class="section-content">
+          <p class="section-label">Work</p>
+          <h2>Portfolio projects</h2>
 
-  <div class="project-card">
-    <h3>Project Two</h3>
-    <p>A future project where I will practice layouts and colors.</p>
-  </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-number">01</p>
+              <h3>My First Website</h3>
+              <p>
+                A personal website built with HTML, CSS, and JavaScript, published
+                online with GitHub Pages.
+              </p>
+              <a href="https://owolabimykel-glitch.github.io/my-first-website/" target="_blank" rel="noreferrer">View live site</a>
+            </article>
 
-  <div class="project-card">
-    <h3>Project Three</h3>
-    <p>A future project where I will add more JavaScript features.</p>
-  </div>
-</section>
-</h2>
-<p>You can contact me by email: <a href="mailto:toby65522@gmail.com">toby65522@gmail.com</a></p>
+            <article class="project-card">
+              <p class="project-number">02</p>
+              <h3>Small Business Page</h3>
+              <p>
+                A future sample landing page for a business that needs a simple,
+                trustworthy online presence.
+              </p>
+              <a href="#contact">Coming soon</a>
+            </article>
 
+            <article class="project-card">
+              <p class="project-number">03</p>
+              <h3>Interactive JavaScript Page</h3>
+              <p>
+                A future project where I will add interactive features that make a
+                website feel more useful and engaging.
+              </p>
+              <a href="#contact">Coming soon</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <button id="helloButton">Say Hello</button>
-  <p id="message"></p>
-</section>
-<footer>
-  <p>Made by Toby while learning web development.</p>
-</footer>
+      <section id="contact" class="section contact-section">
+        <div class="section-content contact-layout">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Need a simple website idea brought to life?</h2>
+            <p>
+              Send me a message if you want to follow my learning journey, discuss
+              a practice project, or talk about a simple website concept.
+            </p>
+          </div>
 
-<script src="script.js"></script>
+          <div class="contact-card">
+            <p>Email</p>
+            <a href="mailto:toby65522@gmail.com">toby65522@gmail.com</a>
+            <button id="helloButton">Say Hello</button>
+            <p id="message"></p>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <p>Toby Web Studio. Built and published while learning web development.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
